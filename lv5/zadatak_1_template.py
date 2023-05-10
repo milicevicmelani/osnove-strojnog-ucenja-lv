@@ -5,7 +5,6 @@ import matplotlib.colors as mcolors
 from sklearn.datasets import make_classification
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-from mlxtend.plotting import plot_decision_regions
 from sklearn . metrics import accuracy_score, classification_report, precision_score
 from sklearn . metrics import confusion_matrix , ConfusionMatrixDisplay
 
@@ -36,6 +35,9 @@ theta0=LogRegression_model.intercept_
 coefs = LogRegression_model.coef_.T
 a = -coefs[0]/coefs[1]
 b = -theta0/coefs[1]
+
+print(theta0)
+print(coefs)
 
 xy_min, xy_max = -4, 4
 
