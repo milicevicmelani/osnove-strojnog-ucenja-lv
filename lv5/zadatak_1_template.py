@@ -21,7 +21,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 
 plt.figure()
-plt.scatter(X_train[:,0],X_train[:,1],marker='o',c=y_train,cmap='viridis',s=10)
+plt.scatter(X_train[:,0],X_train[:,0],marker='o',c=y_train,cmap='viridis',s=10)
 plt.scatter(X_test[:,0],X_test[:,0],marker='x',c=y_test,cmap='plasma',s=25)
 
 #B. Izgradite model logisticke regresije pomocu scikit-learn biblioteke na temelju skupa podataka
